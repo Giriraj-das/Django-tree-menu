@@ -1,0 +1,15 @@
+SECRET_KEY="django-insecure-#w5ovv0qf6(vugm-48hd6le@mx+pb0&q-#xw%g%w55#4t0_aq4"
+DEBUG=True
+
+DJANGO_SUPERUSER_USERNAME=Admin
+DJANGO_SUPERUSER_EMAIL=admin@gmail.com
+DJANGO_SUPERUSER_PASSWORD=tree-menu
+
+DB_ENGINE=django.db.backends.postgresql
+DB_NAME=postgres
+DB_USER=postgres
+DB_PASS=postgres
+DB_HOST=db
+DB_PORT=5432
+
+IMAGE_ARM64=oleksandr108/tree-menu:arm64-v1.0
