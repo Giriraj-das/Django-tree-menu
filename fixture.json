@@ -461,7 +461,7 @@
         "model": "menu.menu",
         "pk": 52,
         "fields": {
-            "title": "main_menu",
+            "title": "second_menu",
             "url": ""
         }
     },
@@ -551,7 +551,7 @@
         "pk": 62,
         "fields": {
             "title": "Item 1",
-            "url": "/item1/",
+            "url": "item1",
             "parent": 53
         }
     },
@@ -560,7 +560,7 @@
         "pk": 63,
         "fields": {
             "title": "Item 2",
-            "url": "/item2/",
+            "url": "item2",
             "parent": 53
         }
     },
@@ -569,7 +569,7 @@
         "pk": 64,
         "fields": {
             "title": "Item 3",
-            "url": "/item3/",
+            "url": "item3",
             "parent": 53
         }
     },
@@ -578,7 +578,7 @@
         "pk": 65,
         "fields": {
             "title": "Item 4",
-            "url": "/item4/",
+            "url": "item4",
             "parent": 53
         }
     },
@@ -587,7 +587,7 @@
         "pk": 66,
         "fields": {
             "title": "Item 5",
-            "url": "/item5/",
+            "url": "item5",
             "parent": 53
         }
     }
