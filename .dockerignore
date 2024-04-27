@@ -1,0 +1,6 @@
+.dockerignore
+.gitignore
+.venv
+.idea
+.git
+db.sqlite3

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+{% load static %}
+{% load menu_tags %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+    <link rel="stylesheet" href="{% static 'css/tree-style.css' %}">
+</head>
+<body>
+    <div class="menu">
+        {% draw_menu 'main_menu' request.path %}
+    </div>
+    <div class="menu">
+        {% draw_menu 'second_menu' request.path %}
+    </div>
+</body>
+</html>
