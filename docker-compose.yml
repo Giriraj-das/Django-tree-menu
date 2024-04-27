@@ -4,7 +4,9 @@ services:
   web:
     image: ${IMAGE_ARM64}
     build: .
-    command: python manage.py runserver 0.0.0.0:8000
+    command: sh -c "python manage.py loaddata fixture.json &&
+      (python manage.py createsuperuser --noinput || true) &&
+      python manage.py runserver 0.0.0.0:8000"
     volumes:
       - web_data:/app
     ports:
@@ -23,7 +25,7 @@ services:
     depends_on:
       db:
         condition: service_healthy
-    command: python manage.py migrate; python manage.py loaddata fixture.json; python manage.py createsuperuser --noinput
+    command: python manage.py migrate
     env_file:
       - .env
   db:
