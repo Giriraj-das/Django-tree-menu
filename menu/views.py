@@ -201,3 +201,23 @@ def contacts(request):
 
 def faq(request):
     return render(request, 'menu.html')
+
+
+def item1(request):
+    return render(request, 'menu.html')
+
+
+def item2(request):
+    return render(request, 'menu.html')
+
+
+def item3(request):
+    return render(request, 'menu.html')
+
+
+def item4(request):
+    return render(request, 'menu.html')
+
+
+def item5(request):
+    return render(request, 'menu.html')

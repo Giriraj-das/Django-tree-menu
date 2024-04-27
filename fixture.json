@@ -456,5 +456,139 @@
             "url": "/faq/",
             "parent": 1
         }
+    },
+    {
+        "model": "menu.menu",
+        "pk": 52,
+        "fields": {
+            "title": "main_menu",
+            "url": ""
+        }
+    },
+    {
+        "model": "menu.menu",
+        "pk": 53,
+        "fields": {
+            "title": "Home",
+            "url": "/main/",
+            "parent": 52
+        }
+    },
+    {
+        "model": "menu.menu",
+        "pk": 54,
+        "fields": {
+            "title": "About Us",
+            "url": "/about/",
+            "parent": 52
+        }
+    },
+    {
+        "model": "menu.menu",
+        "pk": 55,
+        "fields": {
+            "title": "Services",
+            "url": "/services/",
+            "parent": 52
+        }
+    },
+    {
+        "model": "menu.menu",
+        "pk": 56,
+        "fields": {
+            "title": "Web Development",
+            "url": "/web-development/",
+            "parent": 55
+        }
+    },
+    {
+        "model": "menu.menu",
+        "pk": 57,
+        "fields": {
+            "title": "Web Design",
+            "url": "/web-design/",
+            "parent": 55
+        }
+    },
+    {
+        "model": "menu.menu",
+        "pk": 58,
+        "fields": {
+            "title": "Marketing",
+            "url": "/marketing/",
+            "parent": 55
+        }
+    },
+    {
+        "model": "menu.menu",
+        "pk": 59,
+        "fields": {
+            "title": "Blog",
+            "url": "/blog/",
+            "parent": 52
+        }
+    },
+    {
+        "model": "menu.menu",
+        "pk": 60,
+        "fields": {
+            "title": "Contact",
+            "url": "/contacts/",
+            "parent": 52
+        }
+    },
+    {
+        "model": "menu.menu",
+        "pk": 61,
+        "fields": {
+            "title": "FAQ",
+            "url": "/faq/",
+            "parent": 52
+        }
+    },
+    {
+        "model": "menu.menu",
+        "pk": 62,
+        "fields": {
+            "title": "Item 1",
+            "url": "/item1/",
+            "parent": 53
+        }
+    },
+    {
+        "model": "menu.menu",
+        "pk": 63,
+        "fields": {
+            "title": "Item 2",
+            "url": "/item2/",
+            "parent": 53
+        }
+    },
+    {
+        "model": "menu.menu",
+        "pk": 64,
+        "fields": {
+            "title": "Item 3",
+            "url": "/item3/",
+            "parent": 53
+        }
+    },
+    {
+        "model": "menu.menu",
+        "pk": 65,
+        "fields": {
+            "title": "Item 4",
+            "url": "/item4/",
+            "parent": 53
+        }
+    },
+    {
+        "model": "menu.menu",
+        "pk": 66,
+        "fields": {
+            "title": "Item 5",
+            "url": "/item5/",
+            "parent": 53
+        }
     }
 ]

@@ -53,4 +53,9 @@ urlpatterns = [
     path('blog/', views.blog),
     path('contacts/', views.contacts),
     path('faq/', views.faq),
+    path('/item1/', views.item1),
+    path('/item2/', views.item2),
+    path('/item3/', views.item3),
+    path('/item4/', views.item4),
+    path('/item5/', views.item5),
 ]
