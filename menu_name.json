@@ -1,0 +1,16 @@
+[
+    {
+        "model": "menu.menuname",
+        "pk": 1,
+        "fields": {
+            "name": "main_menu"
+        }
+    },
+    {
+        "model": "menu.menuname",
+        "pk": 2,
+        "fields": {
+            "name": "second_menu"
+        }
+    }
+]

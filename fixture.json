@@ -3,592 +3,627 @@
         "model": "menu.menu",
         "pk": 1,
         "fields": {
-            "title": "main_menu",
-            "url": ""
+            "title": "Главная",
+            "url": "/main/",
+            "menu_name_id": 1
         }
     },
     {
         "model": "menu.menu",
         "pk": 2,
         "fields": {
-            "title": "Главная",
-            "url": "/main/",
-            "parent": 1
+            "title": "О нас",
+            "url": "/about/",
+            "menu_name_id": 1
         }
     },
     {
         "model": "menu.menu",
         "pk": 3,
         "fields": {
-            "title": "О нас",
-            "url": "/about/",
-            "parent": 1
+            "title": "Услуги",
+            "url": "/services/",
+            "menu_name_id": 1
         }
     },
     {
         "model": "menu.menu",
         "pk": 4,
         "fields": {
-            "title": "Услуги",
-            "url": "/services/",
-            "parent": 1
+            "title": "Веб-разработка",
+            "url": "/web-development/",
+            "parent": 3,
+            "menu_name_id": 1
         }
     },
     {
         "model": "menu.menu",
         "pk": 5,
         "fields": {
-            "title": "Веб-разработка",
-            "url": "/web-development/",
-            "parent": 4
+            "title": "Веб-дизайн",
+            "url": "/web-design/",
+            "parent": 4,
+            "menu_name_id": 1
         }
     },
     {
         "model": "menu.menu",
         "pk": 6,
         "fields": {
-            "title": "Веб-дизайн",
-            "url": "/web-design/",
-            "parent": 5
+            "title": "UX/UI дизайн",
+            "url": "/ux-ui-design/",
+            "parent": 5,
+            "menu_name_id": 1
         }
     },
     {
         "model": "menu.menu",
         "pk": 7,
         "fields": {
-            "title": "UX/UI дизайн",
-            "url": "/ux-ui-design/",
-            "parent": 6
+            "title": "Прототипирование",
+            "url": "/prototyping/",
+            "parent": 6,
+            "menu_name_id": 1
         }
     },
     {
         "model": "menu.menu",
         "pk": 8,
         "fields": {
-            "title": "Прототипирование",
-            "url": "/prototyping/",
-            "parent": 7
+            "title": "Верстка макетов",
+            "url": "/layout-design/",
+            "parent": 7,
+            "menu_name_id": 1
         }
     },
     {
         "model": "menu.menu",
         "pk": 9,
         "fields": {
-            "title": "Верстка макетов",
-            "url": "/layout-design/",
-            "parent": 8
+            "title": "Тестирование пользовательского опыта",
+            "url": "/user-experience-testing/",
+            "parent": 7,
+            "menu_name_id": 1
         }
     },
     {
         "model": "menu.menu",
         "pk": 10,
         "fields": {
-            "title": "Тестирование пользовательского опыта",
-            "url": "/user-experience-testing/",
-            "parent": 8
+            "title": "Графический дизайн",
+            "url": "/graphic-design/",
+            "parent": 6,
+            "menu_name_id": 1
         }
     },
     {
         "model": "menu.menu",
         "pk": 11,
         "fields": {
-            "title": "Графический дизайн",
-            "url": "/graphic-design/",
-            "parent": 7
+            "title": "Логотипы",
+            "url": "logos",
+            "parent": 10,
+            "menu_name_id": 1
         }
     },
     {
         "model": "menu.menu",
         "pk": 12,
         "fields": {
-            "title": "Логотипы",
-            "url": "logos",
-            "parent": 11
+            "title": "Разработка концепции",
+            "url": "concept-development",
+            "parent": 11,
+            "menu_name_id": 1
         }
     },
     {
         "model": "menu.menu",
         "pk": 13,
         "fields": {
-            "title": "Разработка концепции",
-            "url": "concept-development",
-            "parent": 12
+            "title": "Создание эскизов",
+            "url": "sketching",
+            "parent": 11,
+            "menu_name_id": 1
         }
     },
     {
         "model": "menu.menu",
         "pk": 14,
         "fields": {
-            "title": "Создание эскизов",
-            "url": "sketching",
-            "parent": 12
+            "title": "Иллюстрации",
+            "url": "illustrations",
+            "parent": 10,
+            "menu_name_id": 1
         }
     },
     {
         "model": "menu.menu",
         "pk": 15,
         "fields": {
-            "title": "Иллюстрации",
-            "url": "illustrations",
-            "parent": 11
+            "title": "Векторные изображения",
+            "url": "vector-images",
+            "parent": 14,
+            "menu_name_id": 1
         }
     },
     {
         "model": "menu.menu",
         "pk": 16,
         "fields": {
-            "title": "Векторные изображения",
-            "url": "vector-images",
-            "parent": 15
+            "title": "Растровая графика",
+            "url": "raster-graphics",
+            "parent": 14,
+            "menu_name_id": 1
         }
     },
     {
         "model": "menu.menu",
         "pk": 17,
         "fields": {
-            "title": "Растровая графика",
-            "url": "raster-graphics",
-            "parent": 15
+            "title": "Веб-программирование",
+            "url": "/web-programming/",
+            "parent": 4,
+            "menu_name_id": 1
         }
     },
     {
         "model": "menu.menu",
         "pk": 18,
         "fields": {
-            "title": "Веб-программирование",
-            "url": "/web-programming/",
-            "parent": 5
+            "title": "Frontend разработка",
+            "url": "/front-dev/",
+            "parent": 17,
+            "menu_name_id": 1
         }
     },
     {
         "model": "menu.menu",
         "pk": 19,
         "fields": {
-            "title": "Frontend разработка",
-            "url": "/front-dev/",
-            "parent": 18
+            "title": "HTML/CSS",
+            "url": "/html-css/",
+            "parent": 18,
+            "menu_name_id": 1
         }
     },
     {
         "model": "menu.menu",
         "pk": 20,
         "fields": {
-            "title": "HTML/CSS",
-            "url": "/html-css/",
-            "parent": 19
+            "title": "Flexbox",
+            "url": "/flexbox/",
+            "parent": 19,
+            "menu_name_id": 1
         }
     },
     {
         "model": "menu.menu",
         "pk": 21,
         "fields": {
-            "title": "Flexbox",
-            "url": "/flexbox/",
-            "parent": 20
+            "title": "Grid",
+            "url": "/grid/",
+            "parent": 19,
+            "menu_name_id": 1
         }
     },
     {
         "model": "menu.menu",
         "pk": 22,
         "fields": {
-            "title": "Grid",
-            "url": "/grid/",
-            "parent": 20
+            "title": "JavaScript",
+            "url": "/javascript/",
+            "parent": 18,
+            "menu_name_id": 1
         }
     },
     {
         "model": "menu.menu",
         "pk": 23,
         "fields": {
-            "title": "JavaScript",
-            "url": "/javascript/",
-            "parent": 19
+            "title": "ES6",
+            "url": "/es6/",
+            "parent": 22,
+            "menu_name_id": 1
         }
     },
     {
         "model": "menu.menu",
         "pk": 24,
         "fields": {
-            "title": "ES6",
-            "url": "/es6/",
-            "parent": 23
+            "title": "React.js",
+            "url": "/reactjs/",
+            "parent": 22,
+            "menu_name_id": 1
         }
     },
     {
         "model": "menu.menu",
         "pk": 25,
         "fields": {
-            "title": "React.js",
-            "url": "/reactjs/",
-            "parent": 23
+            "title": "Backend разработка",
+            "url": "back-dev",
+            "parent": 17,
+            "menu_name_id": 1
         }
     },
     {
         "model": "menu.menu",
         "pk": 26,
         "fields": {
-            "title": "Backend разработка",
-            "url": "back-dev",
-            "parent": 18
+            "title": "PHP",
+            "url": "php",
+            "parent": 25,
+            "menu_name_id": 1
         }
     },
     {
         "model": "menu.menu",
         "pk": 27,
         "fields": {
-            "title": "PHP",
-            "url": "php",
-            "parent": 26
+            "title": "Laravel",
+            "url": "laravel",
+            "parent": 26,
+            "menu_name_id": 1
         }
     },
     {
         "model": "menu.menu",
         "pk": 28,
         "fields": {
-            "title": "Laravel",
-            "url": "laravel",
-            "parent": 27
+            "title": "Symfony",
+            "url": "symfony",
+            "parent": 26,
+            "menu_name_id": 1
         }
     },
     {
         "model": "menu.menu",
         "pk": 29,
         "fields": {
-            "title": "Symfony",
-            "url": "symfony",
-            "parent": 27
+            "title": "Python",
+            "url": "python",
+            "parent": 25,
+            "menu_name_id": 1
         }
     },
     {
         "model": "menu.menu",
         "pk": 30,
         "fields": {
-            "title": "Python",
-            "url": "python",
-            "parent": 26
+            "title": "Django",
+            "url": "django",
+            "parent": 29,
+            "menu_name_id": 1
         }
     },
     {
         "model": "menu.menu",
         "pk": 31,
         "fields": {
-            "title": "Django",
-            "url": "django",
-            "parent": 30
+            "title": "Flask",
+            "url": "flask",
+            "parent": 29,
+            "menu_name_id": 1
         }
     },
     {
         "model": "menu.menu",
         "pk": 32,
         "fields": {
-            "title": "Flask",
-            "url": "flask",
-            "parent": 30
+            "title": "Маркетинг",
+            "url": "/marketing/",
+            "parent": 3,
+            "menu_name_id": 1
         }
     },
     {
         "model": "menu.menu",
         "pk": 33,
         "fields": {
-            "title": "Маркетинг",
-            "url": "/marketing/",
-            "parent": 4
+            "title": "SEO",
+            "url": "/seo/",
+            "parent": 32,
+            "menu_name_id": 1
         }
     },
     {
         "model": "menu.menu",
         "pk": 34,
         "fields": {
-            "title": "SEO",
-            "url": "/seo/",
-            "parent": 33
+            "title": "Анализ ключевых слов",
+            "url": "/keyword-analysis/",
+            "parent": 33,
+            "menu_name_id": 1
         }
     },
     {
         "model": "menu.menu",
         "pk": 35,
         "fields": {
-            "title": "Анализ ключевых слов",
-            "url": "/keyword-analysis/",
-            "parent": 34
+            "title": "Исследование рынка",
+            "url": "/market-research/",
+            "parent": 34,
+            "menu_name_id": 1
         }
     },
     {
         "model": "menu.menu",
         "pk": 36,
         "fields": {
-            "title": "Исследование рынка",
-            "url": "/market-research/",
-            "parent": 35
+            "title": "Подбор запросов",
+            "url": "/query-selection/",
+            "parent": 34,
+            "menu_name_id": 1
         }
     },
     {
         "model": "menu.menu",
         "pk": 37,
         "fields": {
-            "title": "Подбор запросов",
-            "url": "/query-selection/",
-            "parent": 35
+            "title": "Оптимизация контента",
+            "url": "/content-optimization/",
+            "parent": 33,
+            "menu_name_id": 1
         }
     },
     {
         "model": "menu.menu",
         "pk": 38,
         "fields": {
-            "title": "Оптимизация контента",
-            "url": "/content-optimization/",
-            "parent": 34
+            "title": "Улучшение мета-тегов",
+            "url": "/meta-tags-improvement/",
+            "parent": 37,
+            "menu_name_id": 1
         }
     },
     {
         "model": "menu.menu",
         "pk": 39,
         "fields": {
-            "title": "Улучшение мета-тегов",
-            "url": "/meta-tags-improvement/",
-            "parent": 38
+            "title": "Создание качественного контента",
+            "url": "/quality-content-creation/",
+            "parent": 37,
+            "menu_name_id": 1
         }
     },
     {
         "model": "menu.menu",
         "pk": 40,
         "fields": {
-            "title": "Создание качественного контента",
-            "url": "/quality-content-creation/",
-            "parent": 38
+            "title": "SMM",
+            "url": "/smm/",
+            "parent": 32,
+            "menu_name_id": 1
         }
     },
     {
         "model": "menu.menu",
         "pk": 41,
         "fields": {
-            "title": "SMM",
-            "url": "/smm/",
-            "parent": 33
+            "title": "Реклама в социальных сетях",
+            "url": "/social-media-ads/",
+            "parent": 40,
+            "menu_name_id": 1
         }
     },
     {
         "model": "menu.menu",
         "pk": 42,
         "fields": {
-            "title": "Реклама в социальных сетях",
-            "url": "/social-media-ads/",
-            "parent": 41
+            "title": "Создание рекламных кампаний",
+            "url": "/ad-campaigns-creation/",
+            "parent": 41,
+            "menu_name_id": 1
         }
     },
     {
         "model": "menu.menu",
         "pk": 43,
         "fields": {
-            "title": "Создание рекламных кампаний",
-            "url": "/ad-campaigns-creation/",
-            "parent": 42
+            "title": "Таргетинг аудитории",
+            "url": "/audience-targeting/",
+            "parent": 41,
+            "menu_name_id": 1
         }
     },
     {
         "model": "menu.menu",
         "pk": 44,
         "fields": {
-            "title": "Таргетинг аудитории",
-            "url": "/audience-targeting/",
-            "parent": 42
+            "title": "Контент-планы",
+            "url": "/content-plans/",
+            "parent": 40,
+            "menu_name_id": 1
         }
     },
     {
         "model": "menu.menu",
         "pk": 45,
         "fields": {
-            "title": "Контент-планы",
-            "url": "/content-plans/",
-            "parent": 41
+            "title": "Разработка и планирование контента",
+            "url": "/content-planning/",
+            "parent": 44,
+            "menu_name_id": 1
         }
     },
     {
         "model": "menu.menu",
         "pk": 46,
         "fields": {
-            "title": "Разработка и планирование контента",
-            "url": "/content-planning/",
-            "parent": 45
+            "title": "Анализ эффективности",
+            "url": "/effectiveness-analysis/",
+            "parent": 44,
+            "menu_name_id": 1
         }
     },
     {
         "model": "menu.menu",
         "pk": 47,
         "fields": {
-            "title": "Анализ эффективности",
-            "url": "/effectiveness-analysis/",
-            "parent": 45
+            "title": "Портфолио",
+            "url": "/portfolio/",
+            "menu_name_id": 1
         }
     },
     {
         "model": "menu.menu",
         "pk": 48,
         "fields": {
-            "title": "Портфолио",
-            "url": "/portfolio/",
-            "parent": 1
+            "title": "Блог",
+            "url": "/blog/",
+            "menu_name_id": 1
         }
     },
     {
         "model": "menu.menu",
         "pk": 49,
         "fields": {
-            "title": "Блог",
-            "url": "/blog/",
-            "parent": 1
+            "title": "Контакты",
+            "url": "/contacts/",
+            "menu_name_id": 1
         }
     },
     {
         "model": "menu.menu",
         "pk": 50,
         "fields": {
-            "title": "Контакты",
-            "url": "/contacts/",
-            "parent": 1
+            "title": "FAQ",
+            "url": "/faq/",
+            "menu_name_id": 1
         }
     },
     {
         "model": "menu.menu",
         "pk": 51,
         "fields": {
-            "title": "FAQ",
-            "url": "/faq/",
-            "parent": 1
+            "title": "Home",
+            "url": "/main/",
+            "menu_name_id": 2
         }
     },
     {
         "model": "menu.menu",
         "pk": 52,
         "fields": {
-            "title": "second_menu",
-            "url": ""
+            "title": "About Us",
+            "url": "/about/",
+            "menu_name_id": 2
         }
     },
     {
         "model": "menu.menu",
         "pk": 53,
         "fields": {
-            "title": "Home",
-            "url": "/main/",
-            "parent": 52
+            "title": "Services",
+            "url": "/services/",
+            "menu_name_id": 2
         }
     },
     {
         "model": "menu.menu",
         "pk": 54,
         "fields": {
-            "title": "About Us",
-            "url": "/about/",
-            "parent": 52
+            "title": "Web Development",
+            "url": "/web-development/",
+            "parent": 53,
+            "menu_name_id": 2
         }
     },
     {
         "model": "menu.menu",
         "pk": 55,
         "fields": {
-            "title": "Services",
-            "url": "/services/",
-            "parent": 52
+            "title": "Web Design",
+            "url": "/web-design/",
+            "parent": 54,
+            "menu_name_id": 2
         }
     },
     {
         "model": "menu.menu",
         "pk": 56,
         "fields": {
-            "title": "Web Development",
-            "url": "/web-development/",
-            "parent": 55
+            "title": "Marketing",
+            "url": "/marketing/",
+            "parent": 55,
+            "menu_name_id": 2
         }
     },
     {
         "model": "menu.menu",
         "pk": 57,
         "fields": {
-            "title": "Web Design",
-            "url": "/web-design/",
-            "parent": 55
+            "title": "Blog",
+            "url": "/blog/",
+            "menu_name_id": 2
         }
     },
     {
         "model": "menu.menu",
         "pk": 58,
         "fields": {
-            "title": "Marketing",
-            "url": "/marketing/",
-            "parent": 55
+            "title": "Contact",
+            "url": "/contacts/",
+            "menu_name_id": 2
         }
     },
     {
         "model": "menu.menu",
         "pk": 59,
         "fields": {
-            "title": "Blog",
-            "url": "/blog/",
-            "parent": 52
+            "title": "FAQ",
+            "url": "/faq/",
+            "menu_name_id": 2
         }
     },
     {
         "model": "menu.menu",
         "pk": 60,
         "fields": {
-            "title": "Contact",
-            "url": "/contacts/",
-            "parent": 52
+            "title": "Item 1",
+            "url": "item1",
+            "parent": 56,
+            "menu_name_id": 2
         }
     },
     {
         "model": "menu.menu",
         "pk": 61,
         "fields": {
-            "title": "FAQ",
-            "url": "/faq/",
-            "parent": 52
+            "title": "Item 2",
+            "url": "item2",
+            "parent": 56,
+            "menu_name_id": 2
         }
     },
     {
         "model": "menu.menu",
         "pk": 62,
         "fields": {
-            "title": "Item 1",
-            "url": "item1",
-            "parent": 53
+            "title": "Item 3",
+            "url": "item3",
+            "parent": 56,
+            "menu_name_id": 2
         }
     },
     {
         "model": "menu.menu",
         "pk": 63,
         "fields": {
-            "title": "Item 2",
-            "url": "item2",
-            "parent": 53
+            "title": "Item 4",
+            "url": "item4",
+            "parent": 56,
+            "menu_name_id": 2
         }
     },
     {
         "model": "menu.menu",
         "pk": 64,
         "fields": {
-            "title": "Item 3",
-            "url": "item3",
-            "parent": 53
-        }
-    },
-    {
-        "model": "menu.menu",
-        "pk": 65,
-        "fields": {
-            "title": "Item 4",
-            "url": "item4",
-            "parent": 53
-        }
-    },
-    {
-        "model": "menu.menu",
-        "pk": 66,
-        "fields": {
             "title": "Item 5",
             "url": "item5",
-            "parent": 53
+            "parent": 56,
+            "menu_name_id": 2
         }
     }
 ]

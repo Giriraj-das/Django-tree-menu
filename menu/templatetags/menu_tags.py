@@ -3,26 +3,9 @@ from django.db import connection
 from django.utils.html import format_html
 from django.urls import reverse
 
+from menu.models import Menu
+
 register = template.Library()
-
-
-def db_connect(menu_name: str) -> list:
-    with connection.cursor() as cursor:
-        cursor.execute("""
-            WITH RECURSIVE menu_tree AS (
-                SELECT id, title, url, parent_id
-                FROM menu_menu
-                WHERE title = %s
-                UNION ALL
-                SELECT m.id, m.title, m.url, m.parent_id
-                FROM menu_menu m
-                JOIN menu_tree mt ON m.parent_id = mt.id
-            )
-            SELECT id, title, url, parent_id
-            FROM menu_tree;
-        """, [menu_name])
-        rows = cursor.fetchall()
-        return rows
 
 
 def change_url(row_url: str) -> str:
@@ -34,17 +17,17 @@ def change_url(row_url: str) -> str:
 
 @register.simple_tag
 def draw_menu(menu_name: str, current_url: str = None):
-    rows = db_connect(menu_name)
+    rows = Menu.objects.filter(menu_name__name=menu_name)
 
     menu_item = None
     menu_dict = {}
     for row in rows:
-        url = change_url(row[2])
-        new_row = (row[0], row[1], url, row[3])
+        url = change_url(row.url)
+        new_row = (row.id, row.title, url, row.parent_id)
 
         if url == current_url:
             menu_item = new_row
-        menu_dict.setdefault(row[3], []).append(new_row)
+        menu_dict.setdefault(row.parent_id, []).append(new_row)
 
     if not menu_item:
         return 'Menu is not associated with the current address'
@@ -67,16 +50,16 @@ def draw_menu(menu_name: str, current_url: str = None):
 
 
 def recursive(rows, menu_dict, menu_item, html):
+    # прерывание на корневом списке меню
+    if not menu_item[3]:
+        return html
+
     parent_item = None
     for row in rows:
-        if row[0] == menu_item[3]:
-            url = change_url(row[2])
-            parent_item = (row[0], row[1], url, row[3])
+        if row.id == menu_item[3]:
+            url = change_url(row.url)
+            parent_item = (row.id, row.title, url, row.parent_id)
             break
-
-    # прерывание на корневом списке меню
-    if not parent_item[3]:
-        return html
 
     html_local = '<ul>'
     for item in menu_dict.get(parent_item[3], []):  # построение списка элементов меню
